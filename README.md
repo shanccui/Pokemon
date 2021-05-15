@@ -22,7 +22,11 @@ Unlike regular pokemon, in this mode, each pokemon is monotype and there are no 
 
 
 # Mode 2: World Challenge Cup
-*** This mode is in progress ***
+
+
+*** THIS MODE IS STILL IN PROGRESS ***
+
+
 Not only does this mode focus on better formatting and structure of Mode 1, revamping, regrouping and tidying up a lot of the code, there is a lot more content.
 This mode is unlockable once you beat the first mode. You will be provided a special password to enter into the second mode once you become Champion of Eula. 
 Representing Eula, you will be facing in a tournament style challenge where you can face off against 4 out of 15 different regional champions to claim the World Champion title. 
