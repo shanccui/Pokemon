@@ -7,10 +7,12 @@ var image2 = document.createElement("IMG");
 image2.id = "image2";
 var newimage = "yes";
 var chances = 2;
+
 window.onload = function() {
   audio.volume = 0.2;
   audio.play();
 };
+
 function submitName() {
   var userName = document.getElementById("name").value;
   document.getElementById("prep1").innerHTML =
@@ -20,6 +22,9 @@ function submitName() {
   document.getElementById("prep2").style.visibility = "visible";
   document.getElementById("prep3").style.visibility = "visible";
   pokemons.forEach(display);
+  alert(
+    "***PLEASE READ**** Welcome to my Pokemon game, and thank you for playing it! If you would like to test the game's functionality and not worry about being defeated, please make sure to include pokemon #53 in your party, as that pokemon has buffed stats and will ensure that you can get through the game! Otherwise if you are up for a fun challenge, avoid using Blazikekn (53)! Have fun and thanks for playing!"
+  );
 }
 var playerTeam = [];
 function chooseTeam() {
@@ -55,7 +60,7 @@ function chooseTeam() {
       quote();
     };
     document.getElementById("finalstep").innerHTML =
-      "<h3> Now we are all set! If you haven't done a Pokemon battle before, heres a brief intro for you. There are 18 different types of Pokemon, you can use as a reference: <br /> <center> <img src=\'https://cdn.glitch.com/27bb4c34-4938-4841-987f-9b91a0ee26a4%2Ftypechart.png?v=1609797703431'>" +
+      "<h3> Now we are all set! If you haven't done a Pokemon battle before, heres a brief intro for you. There are 18 different types of Pokemon, you can use as a reference: <br /> <center> <img src='https://cdn.glitch.com/27bb4c34-4938-4841-987f-9b91a0ee26a4%2Ftypechart.png?v=1609797703431'>" +
       "</center><br />In order to win, it is best that you keep in mind what type the opponents Pokemon are and whether you are strong, weak or balanced by that type! Each of the elite 4 has a team of 6 strong pokemon, that fall in 3 or less types. However it is not that simple. In Pokemon, you have two different types of offense. Physical attack (atk), and Special Attack (spa). All of your Pokemon moves fall under one or the other. This is particularly useful to know, because some Pokemon have lower special defense and some have lower physical defense. Some Pokemon have higher special attack, and some have higher physical attack! You will also find that the opponent's Pokemon moves before yours, and thats because their speed stat is higher. And some Pokemon have higher health points than others, which can make them harder to defeat. <br><br> You can tell if your Pokemon has a higher atk or special atk stat by looking at your hpbar border, likewise your opponents. Higher atkstat is red- higher spa stat is blue. White is equal. Your moves will havea red or blue outline indicating if its a ATK or SPA move, respectively.Thats a quick intro on how this game works! After you beat all 4, you can move on to challenge the Champion of the Tummysa region. <br /></h3><h2>  Now go on and press the Challenge button! I have great confidence that  you will succeed!</h2>";
     document.getElementById("finalstep").appendChild(challenge);
   }
@@ -66,13 +71,13 @@ var pokemons = [
     name: "Kabutops",
     level: 79,
     type: "rock",
-    total_hp: 1224,
-    hp: 1224,
-    spe: 1172,
-    atk: 1227,
-    def: 1211,
+    total_hp: 224,
+    hp: 224,
+    spe: 172,
+    atk: 227,
+    def: 211,
     spa: 148,
-    spd: 1156,
+    spd: 156,
     moves: {
       m1: ["Waterfall", 80, 1, "atk", "water"],
       m2: ["Stone Edge", 100, 0.8, "atk", "rock"]
@@ -145,7 +150,7 @@ var pokemons = [
       "http://play.pokemonshowdown.com/sprites/ani-back-shiny/mothim.gif",
     sound: "https://play.pokemonshowdown.com/audio/cries/mothim.mp3"
   },
- 
+
   {
     name: "Galvantula",
     level: 84,
@@ -189,7 +194,7 @@ var pokemons = [
       "http://play.pokemonshowdown.com/sprites/ani-back-shiny/heracross.gif",
     sound: "https://play.pokemonshowdown.com/audio/cries/heracross.mp3"
   },
- 
+
   // grass 4/5
 
   {
@@ -253,7 +258,7 @@ var pokemons = [
     reverse: "http://play.pokemonshowdown.com/sprites/ani-back/tangrowth.gif",
     sound: "https://play.pokemonshowdown.com/audio/cries/tangrowth.mp3"
   },
- 
+
   // fire DONE
   {
     name: "Ninetales",
@@ -382,7 +387,7 @@ var pokemons = [
     reverse: "http://play.pokemonshowdown.com/sprites/ani-back/sableye.gif",
     sound: "https://play.pokemonshowdown.com/audio/cries/sableye.mp3"
   },
- 
+
   // dragon DONE
   {
     name: "Garchomp",
@@ -448,7 +453,7 @@ var pokemons = [
       "http://play.pokemonshowdown.com/sprites/ani-back-shiny/altaria.gif",
     sound: "https://play.pokemonshowdown.com/audio/cries/altaria.mp3"
   },
- 
+
   // electric DONE
   {
     name: "Electivire",
@@ -471,7 +476,7 @@ var pokemons = [
       "http://play.pokemonshowdown.com/sprites/ani-back-shiny/electivire.gif",
     sound: "https://play.pokemonshowdown.com/audio/cries/electivire.mp3"
   },
-  
+
   {
     name: "Pachirisu",
     level: 87,
@@ -493,7 +498,7 @@ var pokemons = [
       "http://play.pokemonshowdown.com/sprites/ani-back-shiny/pachirisu.gif",
     sound: "https://play.pokemonshowdown.com/audio/cries/pachirisu.mp3"
   },
-  
+
   // psychic DONE
   {
     name: "Reuniclus",
@@ -623,7 +628,7 @@ var pokemons = [
       "http://play.pokemonshowdown.com/sprites/ani-back-shiny/gyarados.gif",
     sound: "https://play.pokemonshowdown.com/audio/cries/gyarados.mp3"
   },
-  
+
   // ice DONE
   {
     name: "Avalugg",
@@ -638,15 +643,15 @@ var pokemons = [
     spd: 128,
     moves: {
       m1: ["Avalanche", 100, 1, "atk", "ice"],
-      m2: ["Body Press", 80, 1, "atk", "fighting"],
-     //recover
+      m2: ["Body Press", 80, 1, "atk", "fighting"]
+      //recover
     },
     img: "http://play.pokemonshowdown.com/sprites/ani-shiny/avalugg.gif",
     reverse:
       "http://play.pokemonshowdown.com/sprites/ani-back-shiny/avalugg.gif",
     sound: "https://play.pokemonshowdown.com/audio/cries/avalugg.mp3"
   },
-  
+
   {
     name: "Delibird",
     level: 88,
@@ -819,7 +824,7 @@ var pokemons = [
     reverse: "http://play.pokemonshowdown.com/sprites/ani-back/tauros.gif",
     sound: "https://play.pokemonshowdown.com/audio/cries/tauros.mp3"
   },
-  
+
   // ghost DONE
   {
     name: "Dusknoir",
@@ -1027,9 +1032,8 @@ var pokemons = [
     sound: "https://play.pokemonshowdown.com/audio/cries/garbodor.mp3"
   },
 
-
   // flying
-  
+
   {
     name: "Corviknight",
     level: 78,
@@ -1070,7 +1074,6 @@ var pokemons = [
       "http://play.pokemonshowdown.com/sprites/ani-back-shiny/pelipper.gif",
     sound: "https://play.pokemonshowdown.com/audio/cries/pelipper.mp3"
   },
- 
 
   // fairy DONE
   {
@@ -1133,8 +1136,7 @@ var pokemons = [
     reverse: "http://play.pokemonshowdown.com/sprites/ani-back/shiinotic.gif",
     sound: "https://play.pokemonshowdown.com/audio/cries/shiinotic.mp3"
   },
-  
-  
+
   {
     name: "Machamp",
     level: 82,
@@ -1170,7 +1172,7 @@ var pokemons = [
     moves: {
       m1: ["Liquidation", 85, 1, "atk", "water", 16],
       m2: ["Close Combat", 120, 0.8, "atk", "fighting", 16],
-      m3: ["Darkest Lariat", 85, 1, "atk", "dark", 16],
+      m3: ["Darkest Lariat", 85, 1, "atk", "dark", 16]
     },
     img: "http://play.pokemonshowdown.com/sprites/ani/poliwrath.gif",
     reverse: "http://play.pokemonshowdown.com/sprites/ani-back/poliwrath.gif",
@@ -1180,13 +1182,13 @@ var pokemons = [
     name: "Blaziken",
     level: 79,
     type: "fighting",
-    total_hp: 256,
-    hp: 256,
-    spe: 172,
-    atk: 235,
-    def: 156,
-    spa: 219,
-    spd: 156,
+    total_hp: 1256,
+    hp: 1256,
+    spe: 1172,
+    atk: 1235,
+    def: 1156,
+    spa: 1219,
+    spd: 1156,
     moves: {
       m1: ["Stone Edge", 100, 0.8, "atk", "rock", 8],
       m2: ["High Jump Kick", 120, 0.8, "atk", "fighting", 16],
@@ -1944,7 +1946,7 @@ function quote() {
     var image = document.createElement("IMG");
     image.setAttribute(
       "src",
-      "https://cdn.glitch.com/27bb4c34-4938-4841-987f-9b91a0ee26a4%2Ftummy.png?v=1609791573862"
+      "https://cdn.glitch.com/27bb4c34-4938-4841-987f-9b91a0ee26a4%2Fjakey.png?v=1621113534690"
     );
     x.innerHTML =
       "<h3>Greetings " +
@@ -2007,7 +2009,7 @@ function load_hp(playermon, enemymon) {
   } else if (playermon.spa > playermon.atk) {
     bar1.style.borderColor = "blue";
   }
-  
+
   var hp1 = document.getElementById("hp1");
   var hp2 = document.getElementById("hp2");
   var player_width = (playermon.hp / playermon.total_hp) * 100;
@@ -2078,9 +2080,9 @@ function battle(arr) {
       "https://cdn.glitch.com/27bb4c34-4938-4841-987f-9b91a0ee26a4%2Fbaron%20(3).png?v=1615860497532";
     x.style.backgroundImage =
       "url('https://cdn.glitch.com/27bb4c34-4938-4841-987f-9b91a0ee26a4%2F6.png?v=1609905014525')";
-  } else if (arr = jakey) {
+  } else if ((arr = jakey)) {
     document.getElementById("battleimage").src =
-      "https://cdn.glitch.com/27bb4c34-4938-4841-987f-9b91a0ee26a4%2Ftummy%20(3).png?v=1615923329455";
+      "https://cdn.glitch.com/27bb4c34-4938-4841-987f-9b91a0ee26a4%2Fjakey22.png?v=1621113906537";
     x.style.backgroundImage =
       "url('https://cdn.glitch.com/27bb4c34-4938-4841-987f-9b91a0ee26a4%2FDS%20DSi%20-%20Pokemon%20Platinum%20-%20Battle%20Backgrounds%20(2).png?v=1615922984040')";
   }
@@ -2442,7 +2444,9 @@ function playerswitch() {
       "You are out of Pokemon... You have lost the battle";
     if (chances > 0 && current_enemy != "Andre") {
       document.getElementById("battlemessage").innerHTML +=
-      ". Try again from previous elite? You have " + chances + " chances left. Click restart at the bottom of the page to restart <br>";
+        ". Try again from previous elite? You have " +
+        chances +
+        " chances left. Click restart at the bottom of the page to restart <br>";
       var tryagain = document.createElement("BUTTON");
       tryagain.innerHTML = "Try again";
       document.getElementById("battlemessage").appendChild(tryagain);
@@ -2450,7 +2454,7 @@ function playerswitch() {
       var enemy = "Andre";
       if (current_enemy == "Andy") {
         arr = keisha;
-        enemy = "Keisha"; 
+        enemy = "Keisha";
       } else if (current_enemy == "Mona") {
         arr = andy;
         enemy = "Andy";
@@ -2484,9 +2488,8 @@ function playerswitch() {
       };
     } else {
       document.getElementById("battlemessage").innerHTML +=
-      "You are out of chances... You have been defeated...";
+        "You are out of chances... You have been defeated...";
     }
-      
   } else {
     document.getElementById("battlemessage").innerHTML +=
       " You have " +
@@ -2701,7 +2704,7 @@ function add_text(elite) {
   } else if (elite == "Jakey") {
     image.setAttribute(
       "src",
-      "https://cdn.glitch.com/27bb4c34-4938-4841-987f-9b91a0ee26a4%2Ftummy.png?v=1609791573862"
+      "https://cdn.glitch.com/27bb4c34-4938-4841-987f-9b91a0ee26a4%2Fjakey.png?v=1621113534690"
     );
     current_elite = "done";
     x.innerHTML =
