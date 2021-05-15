@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Elite Four</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <script src="/script1.js" defer></script>
+  </head>
+  <body>
+    <audio id="start" preload="auto" loop="loop">
+      <source
+        src="https://cdn.glitch.com/27bb4c34-4938-4841-987f-9b91a0ee26a4%2FVs%20Rival%20Pokemon%20Black%20%26%20White%20Music%20Extended%20%5BMusic%20OST%5D%5BOriginal%20Soundtrack%5D.mp3?v=1615845760899"
+        type="audio/mpeg"
+      />
+    </audio>
+
+    <audio id="s_theme" loop="loop">
+      <source
+        src="https://cdn.glitch.com/27bb4c34-4938-4841-987f-9b91a0ee26a4%2FBattle!%20Trainer%20Pok%C3%A9mon%20X%20%26%20Y%20Music%20Extended%20HD.mp3?v=1614808341883"
+        type="audio/mpeg"
+      />
+    </audio>
+    <audio id="m_theme" loop="loop">
+      <source
+        src="https://cdn.glitch.com/27bb4c34-4938-4841-987f-9b91a0ee26a4%2FPok%C3%A9mon%20Sun%20and%20Moon%20-%20Trainer%20Battle%20Theme%20Extended.mp3?v=1615775703648"
+        type="audio/mpeg"
+      />
+    </audio>
+    <audio id="o_theme" loop="loop">
+      <source
+        src="https://cdn.glitch.com/27bb4c34-4938-4841-987f-9b91a0ee26a4%2FPok%C3%A9mon%20HGSS%20-%20Johto%20Trainer%20Battle%20Theme%20Extended.mp3?v=1615851188262"
+        type="audio/mpeg"
+      />
+    </audio>
+    <audio id="b_theme" loop="loop">
+      <source
+        src="https://cdn.glitch.com/27bb4c34-4938-4841-987f-9b91a0ee26a4%2FVs%20Trainer%20Kanto%20Pok%C3%A9mon%20Heart%20Gold%20Soul%20Silver%20Music%20Extended%20HD.mp3?v=1615858433933"
+        type="audio/mpeg"
+      />
+    </audio>
+    <audio id="t_theme" loop="loop">
+      <source
+        src="https://cdn.glitch.com/27bb4c34-4938-4841-987f-9b91a0ee26a4%2FBattle!%20Steven%20-%20Pok%C3%A9mon%20Masters.mp3?v=1609791139001"
+        type="audio/mpeg"
+      />
+    </audio>
+    <audio id="victory">
+      <source
+        src="https://cdn.glitch.com/27bb4c34-4938-4841-987f-9b91a0ee26a4%2FVictory!%20Gym%20Leader%20-%20Pok%C3%A9mon%20BlackWhite.mp3?v=1615853051461"
+        type="audio/mpeg"
+      />
+    </audio>
+    <audio id="btn_click">
+      <source
+        src="https://cdn.glitch.com/27bb4c34-4938-4841-987f-9b91a0ee26a4%2FPokemon%20(A%20Button)%20-%20Sound%20Effect%20(HD).mp3?v=1614553286314"
+        type="audio/mpeg"
+      />
+    </audio>
+    <audio id="encounter">
+      <source
+        src="https://cdn.glitch.com/27bb4c34-4938-4841-987f-9b91a0ee26a4%2FEncounter!%20Elite%20Four%20-%20Pok%C3%A9mon%20Omega%20RubyAlpha%20Sapphire.mp3?v=1615923693233"
+        type="audio/mpeg"
+      />
+    </audio>
+    <div id="intro">
+      <h1>Pokemon Challenge Cup!</h1>
+
+      <p id="prep1">
+        Hello Challenger! Before we get started, can I grab a name?
+        <input type="text" id="name" />
+        <button class="button" onclick="submitName()">
+          Submit
+        </button>
+      </p>
+      <div id="prep2" style="visibility: hidden">
+        <p>
+          Please enter the numbers of the 6 pokemon you would like on your team,
+          seperated by a comma no space
+        </p>
+        <input type="text" id="choose" />
+        <button class="button" onclick="chooseTeam()">Submit</button>
+      </div>
+      <div id="prep3"></div>
+      <div id="finalstep" style="visibility: hidden"></div>
+    </div>
+    <div id="hide">
+      <div id="prepare">
+        <div id="hpbar1">
+          <div id="hp1"></div>
+        </div>
+        <div id="hpbar2">
+          <div id="hp2"></div>
+        </div>
+      </div>
+      <div id="battle">
+        <img src="null" id="battleimage" />
+        <p id="battlemessage"></p>
+      </div>
+      <div id="battlebuttons"></div>
+      <div id="otheroptions"></div>
+      <div id="switchdead">
+        <input type="text" id="choice" />
+        <button onclick="submit_choice()">
+          Submit
+        </button>
+        <button id="switchbtn" onclick="submit_switch()">
+          Switch
+        </button>
+      </div>
+    </div>
+    <button class="button"><a href="index.html">Restart</a></button>
+  </body>
+</html>
