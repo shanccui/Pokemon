@@ -3,7 +3,7 @@ Welcome to my Pokemon battle simulator with a fun original storyline and charact
 
 Start date: Dec 2020
 
-Total hours so far approx: 40
+Total hours so far approx: 50
 
 ** all characters are designed with https://www.deviantart.com/jcling/art/Pokemon-Trainer-Creator-401165483 **
 
@@ -24,7 +24,7 @@ Unlike regular pokemon, in this mode, each pokemon is monotype and there are no 
 # Mode 2: World Challenge Cup
 
 
-*** THIS MODE IS STILL IN PROGRESS ***
+*** THIS MODE IS STILL IN PROGRESS AND IS UNAVAILABLE (but feel free to check out my current code and how I have reorganized my code from mode 1 so far)***
 
 
 Not only does this mode focus on better formatting and structure of Mode 1, revamping, regrouping and tidying up a lot of the code, there is a lot more content.
