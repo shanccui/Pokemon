@@ -1,0 +1,187 @@
+
+body {
+  font-family: "Source Code Pro", monospace;
+  margin: 2em;
+  background-color: #2757a3;
+  background-image: url("https://cdn.glitch.com/27bb4c34-4938-4841-987f-9b91a0ee26a4%2F34363.jpg?v=1615922975718");
+  background-repeat: no-repeat;
+  background-color: #a8324c;
+  background-size: cover;
+  color: white;
+  height: 100%;
+}
+
+#beginning {
+  background-color: #a8324c;
+  padding: 3%;
+}
+
+#prepare {
+  height: 50vh;
+  width: 80vh;
+  position: relative;
+}
+
+input[type="text"],
+select {
+  width: 10%;
+  padding: 0.5%;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.button {
+  background-color: #FEADCC;
+  border: 1px;
+  color: white;
+  padding: 0.5%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+h1 {
+  color: pink;
+}
+
+#prep1 {
+  background-color: #0c7d91;
+  padding: 1%;
+}
+
+#prep2 {
+  background-color: #0c7d91;
+  padding: 1%;
+}
+
+#prep3 {
+  background-color: #0c7d91;
+  visibility: hidden;
+  margin: 1%;
+  padding: 3%;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto;
+}
+
+#startButton {
+  background-color: pink;
+  outline: 0;
+  border: 0;
+  height: 10vh;
+  width: 15vh;
+}
+
+#nameButton button {
+  background-color: pink;
+  outline: 0;
+  border: 0;
+}
+
+#startButton a {
+  text-decoration: none;
+  font-family: "Source Code Pro", monospace;
+}
+
+#hpbar1 {
+  position: absolute;
+  bottom: 20vh;
+  left: 10vh;
+  width: 20vh;
+  background-color: #ddd;
+  visibility: hidden;
+  border: 2px solid white;
+}
+
+#hp1 {
+  width: 100%;
+  height: 2.2vh;
+  background-color: #4CAF50;
+  text-align: center;
+  color: white;
+}
+
+#hpbar2 {
+  position: absolute;
+  top: 10vh;
+  right: 7vh;
+  width: 20vh;
+  background-color: #ddd;
+  visibility: hidden;
+  border: 2px solid white;
+}
+
+#hp2 {
+  width: 100%;
+  height: 2.2vh;
+  background-color: #4CAF50;
+  text-align: center;
+  color: white;
+}
+
+#switchdead {
+  visibility: hidden;
+}
+
+#battle {
+  background-color: white;
+  color: black;
+  padding: 2%;
+  margin: 1%;
+  width: 30%;
+  visibility: hidden;
+}
+
+.movebtn {
+  padding: 0.5%;
+   border: 0.1em solid #000000;
+   margin: 0 0.2em 0.2em 0;
+   border-radius: 0.12em;
+   box-sizing: border-box;
+   text-decoration: none;
+   font-weight: 300;
+   background-color: #FFFFFF;
+   text-align: center;
+   transition: all 0.15s;
+  background-color: #FEADCC;
+  background-color: #FEADCC;
+  color: white;
+  cursor: pointer;
+}
+
+.movebtn:hover {
+   text-shadow: 0 0 2em rgba(255, 255, 255, 1);
+   color: #FFFFFF;
+   border-color: #FFFFFF;
+}
+
+#battleimage {
+  float: left;
+  width: 18%;
+  height: 18%;
+}
+
+#battlemessage {
+  margin-left: 25%;
+  font-size: 2vh;
+}
+
+#switchbtn {
+  visibility: hidden;
+}
+
+#start {
+  display: none;
+}
+
+#finalstep {
+  background-color: #0c7d91;
+  padding: 2%;
+  height: 100%;
+}
+
+#intro {
+  padding: 2%;
+}
